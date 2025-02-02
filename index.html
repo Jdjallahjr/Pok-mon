@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokémon Search</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Pokémon Search</h1>
+        <input type="text" id="pokemonName" placeholder="Enter Pokémon name" onkeypress="handleKeyPress(event)">
+        <button onclick="searchPokemon()">Search</button>
+        <p id="errorMessage" class="error-message" style="display: none;"></p>
+        <div class="result">
+            <img id="pokemonImage" src="" alt="Pokémon Image" style="display: none;">
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
